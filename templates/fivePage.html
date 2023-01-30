@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="mt-4 p-5 bg-white text-dark rounded">
+        <h1 class="text-center">รายการสินค้า</h1>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="{% static 'images/muse1.png' %}"
+                     width="100%" height="100%">
+            </div>
+            <div class="col-lg-6">
+                <img src="{% static 'images/muse2.png' %}"
+                     width="100%" height="100%">
+            </div>
+            <div class="row">
+                <div class="col-lg-6"><br>
+                    <h4>มาร์คมะขามน้ำผึ้ง<span class="badge bg-danger">NEW</span></h4>
+                    <h5>ช่วยผลัดเซลล์ผิวกระจ่างใส ลดรอยดำรอยแดง
+                        <br>กระชับรูขุมขน ราคา หลอดละ<span class="badge bg-danger">190บาท</span></h5>
+
+                </div>
+                <div class="col-lg-6"><br>
+                    <h4>มาร์คมะกู้ด<span class="badge bg-danger">NEW</span></h4>
+                    <h5>ช่วยทำให้สิวแห้งยุบไว ลดผดลดความมันบนผิว
+                        <br>พื้นฟูผิวให้แข็งแรง<span class="badge bg-danger">199บาท</span></h5>
+                </div>
+            </div>
+        </div>
+    </div><br><br><br><br><br>
+{% endblock %}

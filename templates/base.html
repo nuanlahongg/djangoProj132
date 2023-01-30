@@ -4,32 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link type="text/css" rel="stylesheet" href="{% static 'stylesheets/bt523/css/bootstrap.css' %}">
-    <script src="{% static 'stylesheets/bt523/js/bootstrap.js' %}"></script>
+    <link type="text/css" rel="stylesheet"
+          href="{% static 'stylesheets/bt523/css/bootstrap.css'%}">
+    <script src="{% static 'stylesheets/bt523/js/bootstrap.js'%}"></script>
 </head>
-
-
 <body>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-12 bg-primary">
-            {% include 'hedder.html' %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 bg-primary">
+                {% include 'hedder.html' %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 bg-info text-dark">
+                {% include 'memu.html' %}
+            </div>
+        <div class="col-lg-9 bg-warning text-primary">
+                {% block content %}
+                {% endblock %}
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-lg-2 bg-light text-dark">
-            {% include 'memu.html' %}
-        </div>
-        <div class="col-lg-10 bg-light text-primary">
-            {% block content %}
-            {% endblock %}
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12 bg-primary">
-            {% include 'bottom.html' %}
-        </div>
-    </div>
-</div>
 </body>
 </html>

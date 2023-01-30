@@ -5,21 +5,21 @@ def test(request):
     return HttpResponse("<H1> Hello Word <br> This is my Word wide web </H1>")
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'homePage.html')
 
 def personalRecord(request):
-    return render(request, 'personalRecord.html')
+    return render(request, 'secondPage.html')
 
 def educationalRecord(request):
-    return render(request, 'educationalRecord.html')
+    return render(request, 'thirdPage.html')
 
 def interests(request):
-    return render(request, 'interests.html')
+    return render(request, 'fourthPage.html')
 
 def product(request):
-    return render(request, 'product.html')
+    return render(request, 'fivePage.html')
 
 def roleModel(request):
-    return render(request, 'roleModel.html')
+    return render(request, 'sixthPage.html')
 
 
