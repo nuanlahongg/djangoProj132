@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="mt-4 p-5 bg-primary text-white rounded">
+        <h1 class="text-center">สวัสดี ยินดีต้อนรับ</h1>
+        <p>นางสาวนวญลหง เชื้อสาวะถี
+            อายุ21ปี
+        </p>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="{% static 'images/321732040_1239530783442598_5937468290736081010_n.jpg' %}"
+                     width="100%" height="100%">
+            </div>
+            <div class="col-lg-8">
+                ชอบกินกะเต๋ววว
+            </div>
+        </div>
+    </div> <br>
+    <br><br>
+{% endblock %}
