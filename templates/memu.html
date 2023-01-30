@@ -1,12 +1,14 @@
 {% load static %}
 <br>
 <ul class="list-group">
-    <li class="list-group-item active">หัวข้อ:</li>
-    <li class="list-group-item">หน้าหลัก</li>
-    <li class="list-group-item"><a href="/personalRecord">ประวัติส่วนตัว</a></li>
-    <li class="list-group-item"><a href="/educationalRecord">ประวัติการศึกษา</a></li>
-    <li class="list-group-item"><a href="/interests">สิ่งที่สนใจ</a></li>
-    <li class="list-group-item"><a href="/product">รายการสินค้า</a></li>
-    <li class="list-group-item"><a href="/roleModel">บุคคลต้นแบบ</a></li>
-
+    <li class="list-group-item active"><h4>Menu:</h4></li>
+    <li class="list-group-item"><a href="{% url 'homePage' %}"><h5>หน้าหลัก</h5></a></li>
+    <li class="list-group-item"><a href="{% url 'secondPage' %}"><h5>ประวัติส่วนตัว</h5></a></li>
+    <li class="list-group-item"><a href="{% url 'thirdPage' %}"><h5>ประวัติการศึกษา</h5></a></li>
+    <li class="list-group-item"><a href="{% url 'fourthPage' %}"><h5>สิ่งที่สนใจ</h5></a></li>
+    <li class="list-group-item"><a href="{% url 'fivePage' %}"><h5>สินค้า</h5></a></li>
+    <li class="list-group-item"><a href="{% url 'sixthPage' %}"><h5>บุคคลต้นแบบ</h5></a></li>
+    <li class="list-group-item"><a href="{% url 'product' %}">
+        <h5>รายการสินค้า<span class="badge bg-danger">NEW</span></h5></a></li>
+    <li class="list-group-item"><a href="{% url 'showMyData' %}"><h5>Show MyData</h5></a></li>
 </ul>
