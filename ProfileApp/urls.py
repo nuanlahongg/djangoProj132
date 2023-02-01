@@ -11,5 +11,7 @@ urlpatterns = [
     path('sixthPage/', view.sixthPage, name='sixthPage'),
     path('product/', view.product, name='product'),
     path('showMyData/', view.showMyData, name='showMyData'),
+    path('inputProduct/', view.inputproduct, name='inputProduct'),
+    path('listProduct/', view.lisProduct, name='listProduct'),
 
 ]
