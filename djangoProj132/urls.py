@@ -5,5 +5,5 @@ from ProfileApp import view
 urlpatterns = [
     path('', view.homePage, name='homePage'),
     path('admin/', admin.site.urls),
-    path('ProfileApp/', include('ProfileApp.urls'))
+    path('ProfileApp/', include('ProfileApp.urls')),
 ]

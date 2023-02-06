@@ -1,8 +1,8 @@
-from django.contrib import admin
 from django.urls import path
 from ProfileApp import view
 
 urlpatterns = [
+
     path('test/', view.test, name='test'),
     path('homePage/', view.homePage, name='homePage'),
     path('secondPage/', view.secondPage, name='secondPage'),

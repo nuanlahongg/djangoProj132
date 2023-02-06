@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse, redirect
+from django.shortcuts import render, HttpResponse, redirect,get_object_or_404
 
 
 # Create your views here.
@@ -73,6 +73,7 @@ def product(request):
 listOutProduct = []
 from ProfileApp.forms import *
 from ProfileApp.models import *
+
 
 
 def lisProduct(request):
